@@ -1,0 +1,64 @@
+<script type="text/javascript">
+requirejs(['jquery', 'slick'], function($){
+    $(document).ready(function () {
+        $(".home-slider").slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+        });
+
+        $('.widget-product-grid').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            prevArrow: '<span class="nav-arrow prev"><i class="fas fa-angle-left"></i></span>',
+                    nextArrow: '<span class="nav-arrow next"><i class="fas fa-angle-right"></i></span>',
+            responsive: [
+                {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }
+            ]
+        });
+        //init dropdowns
+        var dropdownElementClasses=['secondary-menu-container', 'account-container', 'cart-container'];
+
+        dropdownElementClasses.forEach(function(current){
+            $('.'+current).on('mouseenter', function(){
+                if($(this).find('.dropdown').length){
+                    $(this).find('.dropdown').css('display', 'block');
+                }
+            });
+            $('.'+current).on('mouseleave', function(){
+                if($(this).find('.dropdown').length){
+                    $(this).find('.dropdown').css('display', 'none');
+                }
+            });
+        });
+
+    });
+
+});
+</script>

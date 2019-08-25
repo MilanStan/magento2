@@ -1,0 +1,12 @@
+<div class="account-btn">
+	<?php $_loggedin = $this->helper('Magento\Checkout\Helper\Cart')->getCart()->getCustomerSession()->isLoggedIn(); ?>
+
+	<?php if( !$_loggedin ) : ?>
+
+	     <div class="gray"><?php echo __("Hello, Sign in");?></div>
+
+	<?php endif; ?>
+	<div class="t-bold">
+	<?php echo __('Your Account'); ?>
+	</div>
+</div>

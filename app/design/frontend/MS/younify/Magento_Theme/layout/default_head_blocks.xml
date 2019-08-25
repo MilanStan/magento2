@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<head>
+	<css src="css/moj.css" media="all"/>
+	<link src="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" src_type="url"/>
+	<link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet" src_type="url"/>
+
+    <script src="http://magento2test.loc:35729/livereload.js" src_type="url"></script>
+</head>
+</page>

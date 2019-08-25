@@ -41,6 +41,17 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    younify: {
+        area: 'frontend',
+        name: 'MS/younify',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l',
+            'css/moj'
+        ],
+        dsl: 'less'
+    },
     backend: {
         area: 'adminhtml',
         name: 'Magento/backend',
@@ -51,4 +62,5 @@ module.exports = {
         ],
         dsl: 'less'
     }
+    
 };

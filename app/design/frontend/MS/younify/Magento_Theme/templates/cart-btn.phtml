@@ -1,0 +1,16 @@
+<div class="cart-btn">
+	<div class="gray">
+		<?php 
+			$helper = $this->helper('\Magento\Checkout\Helper\Cart');
+			echo $helper->getSummaryCount() . __("items");
+		?>			
+	</div>
+	<div class="cart-btn-icon">
+		<div class="t-bold">
+		<span class="gray">
+			<i class="fas fa-shopping-cart"></i>
+		</span>
+		<span><?php echo __('Cart');?></span>
+		</div>
+	</div>
+</div>
